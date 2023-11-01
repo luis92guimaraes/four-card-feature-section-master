@@ -1,0 +1,9 @@
+:root {
+    --bg-color: hsl(0, 0%, 98%);
+    --title-color:  hsl(234, 12%, 34%);
+    --text-color: hsl(229, 6%, 66%);
+    --builder-color: hsl(0, 78%, 62%);
+    --supervisor-color: hsl(180, 62%, 55%);
+    --karma-color: hsl(34, 97%, 64%);
+    --calculator-color: hsl(212, 86%, 64%);
+}

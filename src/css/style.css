@@ -1,0 +1,113 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.main-title .title {
+    font-size: 3rem;
+    font-weight: 200;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.main-title .title strong {
+    color: var(--title-color);
+    font-size: 3rem;
+}
+
+.main-title p {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-bottom: 70px;
+} 
+
+.grid-container {
+    display: grid;  
+    grid-template-areas:
+    "supervisor builder calculator"
+    "supervisor karma calculator"
+    ;
+    grid-template-columns: repeat(2 , 350px);
+    grid-template-rows: repeat(2 ,250px);
+    gap: 50px;
+}
+
+.supervisor {
+    grid-area: supervisor;
+    display: flex;
+    align-items: center;
+}
+
+.builder {
+    grid-area: builder;
+    display: flex;
+    align-items: center;
+}
+
+.karma {
+    grid-area: karma;
+    display: flex;
+    align-items: center;
+}
+
+.calculator {
+    grid-area: calculator;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: -10px 20px 20px gainsboro, 10px 20px 20px gainsboro;
+}
+
+.content .title {
+    color: var(--title-color);
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.content .text {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+
+.content img {
+    width: 60px;
+    height: 60px;
+    align-self: self-end;
+}
+
+.supervisor .content {
+    border-top: 4px solid var(--supervisor-color);
+}
+
+.builder .content {
+    border-top: 5px solid var(--builder-color);
+}
+
+.karma .content {
+    border-top: 5px solid var(--karma-color);
+}
+
+.calculator .content {
+    border-top: 5px solid var(--calculator-color);
+}
