@@ -14,30 +14,32 @@ html {
 
 .main-title {
     text-align: center;
+    width: 500px;
 }
 
 .main-title h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 200;
     color: var(--text-color);
+    margin-bottom: -10px;
 
 }
 
 .main-title h2 {
     color: var(--title-color);
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
+
 }
 
 .main-title p {
     color: var(--text-color);
     font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 } 
 
 .grid-container {
-    display: grid;  
+    display: grid; 
     grid-template-areas:
     "supervisor builder calculator"
     "supervisor karma calculator"
