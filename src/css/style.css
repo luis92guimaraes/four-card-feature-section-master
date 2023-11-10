@@ -6,11 +6,11 @@ html {
 .container {
     background-color: var(--bg-color);
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     min-height: 100vh;
-}
+} 
 
 .main-title {
     text-align: center;

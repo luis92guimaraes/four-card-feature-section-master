@@ -1,4 +1,4 @@
-# Frontend Mentor Challenge | 3 Column Preview Card Component
+# Frontend Mentor Challenge | Four Card Feature Section Master
 
 
 #### Este é mais um desafio vindo do @Frontendmentor, é um exemplo de um menu contendo informações de tipos de carros.
@@ -17,11 +17,11 @@
 
 #### Tela Desktop
 
-<img src="./src/images/desktop.gif" alt="Tela desktop exibindo funcionalidades">
+<img src="./src/images/desktop.jpg" alt="Tela desktop exibindo funcionalidades">
 
 #### Tela Ipad
 
-<img src="./src/images/ipad.gif" alt="Tela tablet exibindo funcionalidades">
+<img src="./src/images/ipad.jpg" alt="Tela tablet exibindo funcionalidades">
 
 #### Tela Mobile
 
@@ -29,7 +29,7 @@
 
 ### Links
 
-- Site URL: https://luis92guimaraes.github.io/3-columns-preview-card-component-main/
+- Site URL: https://luis92guimaraes.github.io/four-card-feature-section-master/
 
 ### Construído com
 
@@ -45,47 +45,48 @@ Esse exercicio é proposto dentro do site @Frontend Mentor, foi um exercício qu
 ## Trechos de códigos
 
 ```
-.container {
+.grid-container {
+    display: grid; 
+    grid-template-areas:
+    "supervisor builder calculator"
+    "supervisor karma calculator"
+    ;
+    grid-template-columns: repeat(3 , 380px);
+    grid-template-rows: repeat(2 ,250px);
+    gap: 40px;
+}
+
+.supervisor {
+    grid-area: supervisor;
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 
-.card {
-    display: grid;
-    grid-template-areas: "sedans suvs luxury";
-    grid-template-columns: repeat(3, 320px);
-    grid-template-rows: 550px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 10px 10px 10px gainsboro;
+.builder {
+    grid-area: builder;
+    display: flex;
+    align-items: center;
 }
 
-.sedans {
-    grid-area: sedans;
-    background-color: var(--bg-sedans-color);
-    padding: 54px;
-} 
-
-.suvs {
-    grid-area: suvs;
-    background-color: var(--bg-suvs-color);
-    padding: 56px;
+.karma {
+    grid-area: karma;
+    display: flex;
+    align-items: center;
 }
 
-.luxury {
-    grid-area: luxury;
-    background-color: var(--bg-luxury-color);
-    padding: 52px;
+.calculator {
+    grid-area: calculator;
+    display: flex;
+    align-items: center;
 }
 
-.title {
-    color: var(--bg-color);
-    font-family: 'Big Shoulders Display', sans-serif;
-    text-transform: uppercase;
-    font-size: 4rem;
-    margin-top: 30px;
+.content {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    padding: 30px;
+    box-shadow: -6px 15px 10px gainsboro, 6px 15px 10px gainsboro;
 }
 ```
 
