@@ -1,7 +1,7 @@
 # Frontend Mentor Challenge | Four Card Feature Section Master
 
 
-#### Este é mais um desafio vindo do @Frontendmentor, é um exemplo de um menu contendo informações de tipos de carros.
+#### Este é mais um desafio vindo do @Frontendmentor, é um exemplo de um menu contendo cards com informações.
 
 ## Índice
 
